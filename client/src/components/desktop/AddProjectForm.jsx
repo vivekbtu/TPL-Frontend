@@ -293,7 +293,7 @@ export default function AddProjectForm({ postData, load }) {
             >
               <option value="person-x">person-x</option>
               <option value="person-y">person-y</option>
-              <option value="person-z">Person Z</option>
+              <option value="person-z">Person-z</option>
             </Select>
             {formik.touched.projectManager && formik.errors.projectManager ? (
               <Text color="red">{formik.errors.projectManager}</Text>

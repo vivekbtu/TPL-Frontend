@@ -69,7 +69,7 @@ export const addProj = async (token, data) => {
   console.log("Add Proj Redux",data);
   let headers = { Authorization: `Bearer ${token}` };
   try {
-    let res = await axios.post('http://localhost:8080/project/post', { ...data }, { headers });
+    let res = await axios.post(`${baseUrl}/project/post`, { ...data }, { headers });
 
     console.log("Res", res);
 
